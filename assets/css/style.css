@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
 header{
     height: 100px;
     background-color: black;
@@ -11,22 +15,54 @@ header{
 .header{
     max-width: 1140px;
     height: 100px;
+
     margin: auto;
+
     display: flex;
     align-items: center;
 }
 .logo{
     width: 100px;
-    
 }
-.logo-img{
+
+.logo-img img{
     width: 80px;
     height: 80px;
     background-color: #b28756;
+    border-radius: 50%;
 }
+
 .menu{
     flex: 1;
-    background-color: red;
     display: flex;
     justify-content: flex-end;
+}
+
+.menu ul, 
+.menu li{
+    list-style: none;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu li a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 5px solid black;
+}
+
+.menu li a:hover,
+.menu .active a{
+    border-bottom: 5px solid #b28756;
 }
