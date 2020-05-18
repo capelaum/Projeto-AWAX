@@ -33,7 +33,7 @@ header{
 .logo-img img{
     width: 80px;
     height: 80px;
-    background-color: #007fff;
+    background-color: #9ce2ff;
     border-radius: 50%;
 }
 
@@ -130,7 +130,7 @@ header{
     color: white;
 }
 
-.banner h1 {
+.banner h1{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 40px;
@@ -145,7 +145,7 @@ header{
     margin-top: 20px;
 }
 
-.banner .sliders-pointers {
+.banner .sliders-pointers{
     width: 100vw;
     height: 20px;
 
@@ -157,7 +157,7 @@ header{
     align-items: center;
 }
 
-.banner .pointer {
+.banner .pointer{
     width: 15px;
     height: 15px;
 
@@ -189,7 +189,6 @@ header{
 
 .default .section-title{
     font-size: 20px;
-    
 }
 
 .default .section-desc{
@@ -249,7 +248,7 @@ header{
 
 /*** VIDEO ***/
 
-.section-aboutus--right {
+.section-aboutus--right{
     width: 520px;
     position: relative;
     text-align: center;
@@ -261,7 +260,7 @@ header{
     
 }
 
-.section-aboutus-right--playvideo {
+.section-aboutus-right--playvideo{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -275,7 +274,7 @@ header{
 
 }
 
-.section-aboutus-right--playvideo i {
+.section-aboutus-right--playvideo i{
     font-size: 100px;
     color: #f7f7f7;
     cursor: pointer;
@@ -315,6 +314,7 @@ header{
 }
 
 /*** PROJECTS ***/
+
 .section-projects{
     display: flex;
     flex-direction: column;
@@ -329,6 +329,7 @@ header{
     display: inline-block;
     padding: 0 20px;
 }
+
 .section-projects--filters ul,
 .section-projects--filters li{
     list-style: none;
@@ -353,3 +354,62 @@ header{
 .section-projects--filters li:first-child{
     border-left: 0;
 }
+
+.section-projects--photos{
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-projects--photo{
+    width: 280px;
+}
+
+.section-projects--photoarea{
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+
+.section-projects--photoarea img{
+    width: inherit;
+    height: inherit;
+
+}
+
+.section-projects--photoinfo{
+    position: absolute;
+    background-color: rgba(0,0,0, 0.5);
+
+    width: inherit;
+    height: inherit;
+
+    display: none;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+}
+
+.section-projects--photoinfo h5{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section-projects--photoarea:hover 
+.section-projects--photoinfo{
+    display: flex;
+}
+
+
+
+
+
+
