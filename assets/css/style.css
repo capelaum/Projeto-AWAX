@@ -44,6 +44,7 @@ header{
     display:none;
     width:32px;
     margin-right:30px;
+    cursor: pointer;
 }
 
 .menu{
@@ -99,6 +100,8 @@ header{
     margin-top: 30px;
     padding: 10px 30px;
     border-radius: 20px;
+
+    border: 1px solid black;
 }
 
 .button:hover{
@@ -106,7 +109,7 @@ header{
     background-color: #9ce2ff;
     color: black;
 
-    border: 1px solid black;
+
 }
 
 /*** BANNER ***/
@@ -1048,6 +1051,12 @@ footer {
         border-left:0;
     }
 
+    /*** PROJECTS ***/
+
+    .section-projects--filters{
+        display: none;
+    }
+
     /*** TEAM ***/
 
     .section-team {
@@ -1184,6 +1193,12 @@ footer {
     }
     .section-service:first-child {
         border-left:0;
+    }
+
+    /*** PROJECTS ***/
+
+    .section-projects--filters{
+        display: none;
     }
 
     .section-projects--filters {
