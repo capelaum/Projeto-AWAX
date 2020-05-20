@@ -1,8 +1,8 @@
-# Projeto AWAX
+# Projeto My AWAX
 
-Página Web responsiva completa a partir de um Layout pronto, feito com HTML5 e CSS3 puro.
+Página Web responsiva a partir de um Layout pronto, feito com HTML + CSS e JavaScript puro.
 
-# GitHub Page: [Awax][2]
+# GitHub Page: [AWAX][2]
 
 ### Feito no curso de HTML5+CSS3 da [B7Web][1]
 
