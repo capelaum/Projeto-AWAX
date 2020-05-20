@@ -1,7 +1,7 @@
 var slideItem = 0;
 
 window.onload = function () {
-    setInterval(passarSlide, 2000);
+    setInterval(passarSlide, 5000);
 
     var slidewidth = document.getElementById("slideshow").offsetWidth;
     console.log("window.onload -> slidewidth = ", slidewidth);
@@ -22,18 +22,17 @@ function passarSlide() {
         slideItem++;
     }
 
-    //* Change Active Pointers
+    //* Mudar Active Pointer
     document.querySelectorAll('.sliders-pointers').forEach( (pointer, pointerIndex) => {
-        //console.log('here');
-
+        
         pointer.classList.remove('active');
-        //console.log(pointer);
-
-
+        
+        // Ao clicar deve mudar o pointer ativo
         pointer.addEventListener( 'click', () => {
+            console.log("passarSlide -> pointer = ", pointer)
             console.log("passarSlide -> pointerIndex = ", pointerIndex)
             
-            document.querySelector('.pointer.active').classList.remove('active');
+            document.querySelector('.pointer .active')[pointerIndex].classList.remove('active');
             pointer.classList.add('active');
 
         })
@@ -46,4 +45,5 @@ function mudarSlide(pos) {
     slideItem = pos;
     var slidewidth = document.getElementById("slideshow").offsetWidth;
     document.getElementsByClassName("sliders")[0].style.marginLeft = "-" + (slidewidth * slideItem) + "px";
+
 }
