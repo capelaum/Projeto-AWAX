@@ -3,7 +3,7 @@ var slideItem = 0;
 window.onload = function () {
     setInterval(passarSlide, 5000);
 
-    var slidewidth = document.getElementById("slideshow").offsetWidth;
+    var slidewidth = document.getElementById("slideshow1").offsetWidth;
     console.log("window.onload -> slidewidth = ", slidewidth);
 
     var objs = document.getElementsByClassName("slide");
@@ -14,7 +14,7 @@ window.onload = function () {
 }
 
 function passarSlide() {
-    var slidewidth = document.getElementById("slideshow").offsetWidth;
+    var slidewidth = document.getElementById("slideshow1").offsetWidth;
 
     if (slideItem >= 2) {
         slideItem = 0;
@@ -43,7 +43,7 @@ function passarSlide() {
 
 function mudarSlide(pos) {
     slideItem = pos;
-    var slidewidth = document.getElementById("slideshow").offsetWidth;
+    var slidewidth = document.getElementById("slideshow1").offsetWidth;
     document.getElementsByClassName("sliders")[0].style.marginLeft = "-" + (slidewidth * slideItem) + "px";
 
 }

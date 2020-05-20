@@ -1034,7 +1034,23 @@ footer {
 
     .section-about--right {
         width: 100%;
+        margin: 0 30px;
     }
+
+    .section-aboutus--right {
+        width:auto;
+        margin-left:30px;
+        margin-right:30px;
+    }
+    .section-aboutus--right img {
+        width: 400px;
+    }
+
+    .section-aboutus-right--playvideo{
+        width: 400px;
+        margin: auto;
+    }
+
 
     /*** SERVICES ***/
 
@@ -1051,8 +1067,9 @@ footer {
 
     /*** PROJECTS ***/
 
-    .section-projects--filters{
-        display: none;
+    .section-projects--filters {
+        margin-left:30px;
+        margin-right:30px;
     }
 
     /*** TEAM ***/
@@ -1148,6 +1165,8 @@ footer {
         font-size:17px;
     }
 
+    /*** ABOUT ***/
+
     .section-about {
         flex-direction:column;
     }
@@ -1167,20 +1186,25 @@ footer {
         width: 300px;
     }
 
-    .section-aboutus--right{
-        width: auto;
+    .section-aboutus--right {
+        width:auto;
+        margin-left:30px;
+        margin-right:30px;
+    }
+    .section-aboutus--right img {
+        width: 300px;
     }
 
-    .section-aboutus-right--playvideo i{
-        font-size: 100px;
-        padding-right: 20vw;
-        
-        text-align: center;
+    .section-aboutus-right--playvideo{
+        width: 300px;
+        margin: auto;
     }
 
     .button{
         text-align: center;
     }
+
+    /*** SERVICES ***/
 
     .section-services {
         flex-wrap:wrap;
@@ -1195,10 +1219,6 @@ footer {
 
     /*** PROJECTS ***/
 
-    .section-projects--filters{
-        display: none;
-    }
-
     .section-projects--filters {
         margin-left:30px;
         margin-right:30px;
@@ -1210,6 +1230,8 @@ footer {
         width:300px;
         height:190px;
     }
+
+    /*** TEAM  ***/
 
     .section-team {
         max-width:280px;
