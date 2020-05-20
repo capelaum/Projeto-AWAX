@@ -1,6 +1,6 @@
 # Projeto My AWAX
 
-Página Web responsiva a partir de um Layout pronto, feito com HTML + CSS e JavaScript puro.
+Feito com HTML + CSS e JavaScript puro.
 
 # GitHub Page: [AWAX][2]
 
