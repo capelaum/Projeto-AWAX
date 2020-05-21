@@ -1,3 +1,7 @@
+//* Encapsulate the Selectors comands
+const sel = (el) => document.querySelector(el);
+const all = (el) => document.querySelectorAll(el);
+
 var slideItem = 0;
 
 window.onload = function () {
@@ -23,7 +27,7 @@ function passarSlide() {
     }
 
     //* Mudar Active Pointer
-    document.querySelectorAll('.sliders-pointers').forEach( (pointer, pointerIndex) => {
+    all('.sliders-pointers').forEach( (pointer, pointerIndex) => {
         
         pointer.classList.remove('active');
         
@@ -32,7 +36,7 @@ function passarSlide() {
             console.log("passarSlide -> pointer = ", pointer)
             console.log("passarSlide -> pointerIndex = ", pointerIndex)
             
-            document.querySelector('.pointer .active')[pointerIndex].classList.remove('active');
+            sel('.pointer .active')[pointerIndex].classList.remove('active');
             pointer.classList.add('active');
 
         })
