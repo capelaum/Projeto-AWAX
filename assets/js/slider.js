@@ -27,17 +27,13 @@ function passarSlide() {
     }
 
     //* Mudar Active Pointer
-    all('.sliders-pointers').forEach( (pointer, pointerIndex) => {
-        
-        pointer.classList.remove('active');
+    all('.pointer').forEach( (pointer, pointerIndex) => {
         
         // Ao clicar deve mudar o pointer ativo
         pointer.addEventListener( 'click', () => {
-            console.log("passarSlide -> pointer = ", pointer)
-            console.log("passarSlide -> pointerIndex = ", pointerIndex)
+            // console.log("passarSlide -> pointer = ", pointer)
+            console.log("pointerIndex = ", pointerIndex)
             
-            sel('.pointer .active')[pointerIndex].classList.remove('active');
-            pointer.classList.add('active');
 
         })
     })
