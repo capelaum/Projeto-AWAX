@@ -1,10 +1,10 @@
-# Projeto My AWAX
+# AWAX - Front-End de site estático :diamond_shape_with_a_dot_inside:
 
-Feito com HTML + CSS e JavaScript puro.
+Feito com HTML+CSS e JavaScript.
 
-# GitHub Page: [AWAX][2]
+## GitHub Page: [AWAX][2]
 
-### Feito no curso de HTML5+CSS3 da [B7Web][1]
+### Curso de HTML5+CSS3 da [B7Web][1]
 
 ### Créditos do Layout: Alexander Bukin
 
