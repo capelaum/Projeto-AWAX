@@ -1,4 +1,4 @@
-# AWAX - Front-End de site estático :diamond_shape_with_a_dot_inside:
+# :diamond_shape_with_a_dot_inside: AWAX - Front-End de site estático 
 
 Feito com HTML+CSS e JavaScript.
 
