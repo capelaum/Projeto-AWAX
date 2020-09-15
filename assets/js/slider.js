@@ -1,20 +1,55 @@
 //* Encapsula Seletores 
-const sel = (el) => document.querySelector(el);
+const select = (el) => document.querySelector(el);
 const all = (el) => document.querySelectorAll(el);
 
+const pointers = document.querySelectorAll('.pointer');
 var slideItem = 0;
 
+function addActive(pointers){
+
+  //* Mudar Active Pointer
+  pointers.forEach( (pointer, pointerIndex) => {
+
+    if(pointer.classList.contains('active'))
+      pointer.classList.remove('active');
+    
+    // Ao clicar deve mudar o pointer ativo
+    pointer.addEventListener( 'click', () => {
+
+        console.log("pointer = ", pointer)
+        console.log("pointerIndex = ", pointerIndex)
+
+        pointer.classList.add('active');
+    })
+
+  })
+}
+
+function removeActive(pointers){
+
+  pointers.forEach( (pointer, pointerIndex) => {
+  
+    if(pointer.classList.contains('active'))
+      pointer.classList.remove('active');
+  
+  })
+}
+
 window.onload = function () {
-    setInterval(passarSlide, 5000);
 
-    var slidewidth = document.getElementById("slideshow").offsetWidth;
-    console.log("window.onload -> slidewidth = ", slidewidth);
 
+    var slidewidth = document.getElementById("slideshow-banner").offsetWidth;
     var objs = document.getElementsByClassName("slide");
+
+    console.log("window.onload -> slidewidth = ", slidewidth);
 
     for (var i = 0; i < objs.length; i++) {
         objs[i].style.width = slidewidth + "px";
     }
+
+    // passa automaticamente a cada periodo
+    //setInterval(passarSlide, 5000);
+
 }
 
 function passarSlide() {
@@ -26,26 +61,20 @@ function passarSlide() {
         slideItem++;
     }
 
-    //* Mudar Active Pointer
-    all('.pointer').forEach( (pointer, pointerIndex) => {
-        
-        // Ao clicar deve mudar o pointer ativo
-        pointer.addEventListener( 'click', () => {
-            // console.log("passarSlide -> pointer = ", pointer)
-            console.log("pointerIndex = ", pointerIndex)
-            
-
-        })
-    })
+    addActive(pointers);
 
     document.getElementsByClassName("sliders")[0].style.marginLeft = "-" + (slidewidth * slideItem) + "px";
 }
 
 function mudarSlide(pos) {
+
     slideItem = pos;
+
     var slidewidth = document.getElementById("slideshow-banner").offsetWidth;
+
     document.getElementsByClassName("sliders")[0].style.marginLeft = "-" + (slidewidth * slideItem) + "px";
 
+    addActive(pointers)
 }
 
 
