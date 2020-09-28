@@ -548,7 +548,7 @@ footer {
 
 .section-team{
     overflow: hidden;
-    max-width: 900px;   
+    max-width: 920px;   
     margin: auto;
 }
 
@@ -585,9 +585,10 @@ footer {
 }
 
 .section-team--area .sliders-pointers {
-    height: 40px;
-    margin-top: 15px;
-    
+    width:100vw;
+    height:20px;
+
+    margin-top: 20px;
 }
 
 .section-team--area .pointer{
@@ -795,6 +796,8 @@ footer {
 .section-premium .sliders-premium {
     width:1000vw;
     height:100%;
+
+    transition: all ease 1.5s;
 }
 .section-premium .slide-premium {
     width:100vw;
