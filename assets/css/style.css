@@ -201,7 +201,7 @@ header{
     margin-top: 20px;
 }
 
-.banner .sliders-pointers{
+.sliders-pointers{
     width: 100vw;
     height: 20px;
 
@@ -213,7 +213,7 @@ header{
     align-items: center;
 }
 
-.banner .pointer{
+.pointer{
     width: 15px;
     height: 15px;
 
@@ -225,7 +225,7 @@ header{
     cursor: pointer;
 }
 
-.banner .pointer.active{
+.pointer.active{
     background-color: var(--primary);
 }
 
@@ -543,24 +543,20 @@ footer {
 .section-team--area{
     background-color: rgba(0,0,0, 0.8);
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
-
-/* 
-*    1 slide = 280px
-*    2 slide = 580px
-*    3 slide = 880px
-*/
 
 .section-team{
     overflow: hidden;
-    max-width: 880px;   /* 3 slides! */
+    max-width: 900px;   
     margin: auto;
 }
 
-.section-team .sliders{
+.section-team .sliders-team{
     width: 1000vw;
     height: 100%;
+
+    transition: all ease 1.5s;
 }
 
 .section-team .slide-team{
@@ -572,6 +568,7 @@ footer {
     display: inline-block;
     background-color: white;
     margin-right: 20px;
+    border-radius: 7px;
 }
 
 .section-team .slide-area{
@@ -587,14 +584,10 @@ footer {
     color: black;
 }
 
-.section-team--area .sliders-pointers{
-    height: 20px;
-
-    margin-top: 30px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.section-team--area .sliders-pointers {
+    height: 40px;
+    margin-top: 15px;
+    
 }
 
 .section-team--area .pointer{
@@ -615,7 +608,9 @@ footer {
 
 .section-team--image{
     width: 150px;
-    height: auto;
+    height: 150px;
+
+    border-radius: 50%;
 }
 
 .section-team--name{
@@ -656,18 +651,23 @@ footer {
 }
 
 /*** TESTIMONALS ***/
-
+.testimonials {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
 .testimonials .section-body {
-    max-width:initial;
+    max-width: initial;
 }
 .section-testimonials {
-    overflow:hidden;
+    overflow: hidden;
 }
-.section-testimonials .sliders {
-    width:1000vw;
-    height:100%;
+.section-testimonials .sliders-testimonials {
+    width: 1000vw;
+    height: 100%;
+
+    transition: all ease 1.5s;
 }
-.section-testimonials .slide {
+.section-testimonials .slide-testimonials {
     width:100vw;
     height:100%;
     display:inline-block;
@@ -708,10 +708,12 @@ footer {
 .section-testimonials .sliders-pointers {
     width:100vw;
     height:20px;
+
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-top:40px;
+
+    margin-top: 15px;
 }
 .section-testimonials .pointer {
     width:15px;
@@ -790,11 +792,11 @@ footer {
 .section-premium a {
     margin-top:30px;
 }
-.section-premium .sliders {
+.section-premium .sliders-premium {
     width:1000vw;
     height:100%;
 }
-.section-premium .slide {
+.section-premium .slide-premium {
     width:100vw;
     height:100%;
     display:inline-block;
@@ -819,6 +821,7 @@ footer {
 }
 .section-premium--right {
     flex:1;
+    padding: 0 30px;
 }
 .section-premium--item {
     display:flex;
@@ -843,10 +846,12 @@ footer {
 .section-premium .sliders-pointers {
     width:100vw;
     height:20px;
+
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-top:40px;
+
+    margin-top:18px;
 }
 .section-premium .pointer {
     width:15px;
