@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta property="og:image" content="./media/Profile.png">
     <meta name="description" content="This is my website description">
     <meta name="keywords" content="web development, web design, HTML CSS ">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/80a77d1ec5.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!--favicon-->
     <link id="favicon" rel="icon" href="assets/icons/terminal.ico" type="image/x-icon" />
-    <title>AWAX</title>
+    <title>FrontEnd Estático - HTML & CSS</title>
 </head>
 <body>
     <header>
@@ -44,57 +47,67 @@
         <section class="banner">
             <div class="sliders">
                 <div class="slide">
+
                     <div class="slide-area slide1" >
-                        <h1>
-                            <span>Presença digital</span><br>
-                            Slide 0 <br>
-                        </h1>
-                        <h2>WhastApp: +55 (61) 99999-0000</h2>
-                        <a href="#" class="button">Contato</a>
+                        <h1><span>Slider com JavaSscript Puro</span><br></h1>
+                        <h2>WhastApp: +55 (61) 99402-4994</h2>
+                        <a href="mailto:thecapellett@gmail.com" target="_blank" class="button">
+                            <i class="fas fa-envelope fa-lg"></i> Contato
+                        </a>
                     </div>
-                </div><!--slide1--><div class="slide">
+                </div><!--slide1-->
+
+                <div class="slide">
                     <div class="slide-area slide2">
-                        <h1>
-                            <span>Presença digital</span><br>
-                            Slide 1
-                        </h1>
-                        <h2>WhastApp: +55 (61) 99999-1111</h2>
-                        <a href="#" class="button">Contato</a>
+                        <h1><span>PHP do Jeito Certo</span><br></h1>
+                        <h2>WhastApp: +55 (61) 99402-4994</h2>
+                        <a href="mailto:thecapellett@gmail.com" target="_blank" class="button">
+                            <i class="fas fa-envelope"></i> Contato
+                        </a>
                     </div>
-                </div><!--slide2--><div class="slide">
+                </div><!--slide2-->
+
+                <div class="slide">
                     <div class="slide-area slide3">
-                        <h1>
-                            <span>Presença digital</span><br>
-                            Slide 2
-                        </h1>
-                        <h2>WhastApp: +55 (61) 99999-2222</h2>
-                        <a href="#" class="button">Contato</a>
+                        <h1><span>Bancos de Dados</span><br></h1>
+                        <h2>WhastApp: +55 (61) 99402-4994</h2>
+                        <a href="mailto:thecapellett@gmail.com" target="_blank" class="button">
+                            <i class="fas fa-envelope"></i> Contato
+                        </a>
                     </div>
                 </div><!--slide3-->
+
             </div><!--sliders-->
-            <div class="sliders-pointers" id="slideshow-banner">
+
+            <div class="sliders-pointers">
                 <div class="pointer active" onclick="mudarSlide(0)"></div>
                 <div class="pointer" onclick="mudarSlide(1)"></div>
                 <div class="pointer" onclick="mudarSlide(2)"></div>
             </div><!--slider-pointers-->
+
         </section><!--banner-->
 
         <section class="default light">
-            <div class="section-title">Sobre o Dev</div>
-            <div class="section-desc">Desenvolvedor Full-Stack</div>
+            <div class="section-title">habilidades</div>
+            <div class="section-desc">Desenvolvedor Web Full-Stack</div>
             <div class="section-body">
                 <div class="section-about">
                     <div class="section-about--left">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, perferendis pariatur quas quia ad rerum eum, 
-                            vitae maxime sunt quisquam ipsam quod similique incidunt assumenda ipsa nihil. 
-                            Ad, repellendus quia?
+                            Utilizo tanto PHP quanto Node.js para o Backend de minhas aplicações, utilizando geralmente Bancos de Dados como MongoDB, MySQL ou MariaDB.
+                            No Frontend implemento o básico, consistindo de HTML, CSS, Sass, Javascript e jQuery. 
+                            Estou em constante aprendizado acerca de frameworks como React, React Native, Vue.js e Laravel.
+                            Já utilizei em alguns projetos pessoais e consigo customizar temas e plugins do WordPress.
                         </p>
                         <br>
-                        <a href="#" class="button">Saiba Mais</a>
+                        <a href="https://www.linkedin.com/in/luis-capelletto/" target="_blank" class="button">Linkedin</a>
                     </div>
                     <div class="section-about--right">
-                        <img src="media/fb_profile.jpg" alt="perfil img">
+                        <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="pt_BR" data-type="vertical" data-theme="dark" data-vanity="luis-capelletto">
+                            <a class="LI-simple-link" href='https://br.linkedin.com/in/luis-capelletto?trk=profile-badge'>
+                                Luís Vinicius Capelletto
+                            </a>
+                        </div><!--!Linkedin Badge!-->
                     </div>
                 </div><!--section-about-->
             </div><!--secction-body-->
@@ -311,7 +324,8 @@
                     <div class="section-team">
 
                         <div class="sliders">
-                            <div class="slide">
+
+                            <div class="slide-team">
                                 <div class="slide-area" >
                                     <img class="section-team--image"src="media/mulher1.png" alt="mulher1">
                                     <div class="section-team--name">Black Widow</div>
@@ -325,7 +339,8 @@
                                     </div>
                                 </div>
                             </div><!--slide1-->
-                            <div class="slide">
+
+                            <div class="slide-team">
                                 <div class="slide-area">
                                     <img class="section-team--image"src="media/homem1.png" alt="homem1">
                                     <div class="section-team--name">Chuck Norris</div>
@@ -339,7 +354,8 @@
                                     </div>
                                 </div>
                             </div><!--slide2-->
-                            <div class="slide">
+
+                            <div class="slide-team">
                                 <div class="slide-area">
                                     <img class="section-team--image"src="media/mulher2.png" alt="mulher2">
                                     <div class="section-team--name">Britney Spears</div>
@@ -353,7 +369,8 @@
                                     </div>
                                 </div>
                             </div><!--slide3-->
-                            <div class="slide">
+
+                            <div class="slide-team">
                                 <div class="slide-area">
                                     <img class="section-team--image"src="media/mulher1.png" alt="mulher1">
                                     <div class="section-team--name">Jane Doe</div>
@@ -367,14 +384,16 @@
                                     </div>
                                 </div>
                             </div><!--slide4-->
+                            
                         </div><!--sliders-->
-
                     </div><!--section-team-->
+
                     <div class="sliders-pointers" id="slideshow2">
                         <div class="pointer active" onclick="mudarSlide(0)"></div>
                         <div class="pointer" onclick="mudarSlide(1)"></div>
                         <div class="pointer" onclick="mudarSlide(2)"></div>
                     </div><!--slider-pointers-->
+
                 </div><!--section-body-->
             </div><!--section-team--area-->
         </section><!--default dark-->
@@ -708,26 +727,22 @@
         </section><!--default light-->
 
         <section class="default light">
-            <div class="section-title">Linkedin</div>
-            <div class="section-desc">Descrição</div>
+            <div class="section-title">Acadêmico</div>
+            <div class="section-desc">Egenharia da Computação</div>
             <div class="section-body">
                 <div class="section-about">
                     <div class="section-about--left">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, perferendis pariatur quas quia ad rerum eum, 
-                            vitae maxime sunt quisquam ipsam quod similique incidunt assumenda ipsa nihil. 
-                            Ad, repellendus quia?
+                            <strong>Estudante de Engenharia da Computação na Universidade de Brasília</strong>, obtive minhas primeiras experiências
+                            com programação de verdade no final 2016 ao entrar na universidade e me deparar com a mãe de todas
+                            as linguagens de programação, o lendário C. Desde então tenho estudado diversas discilinas da área,
+                            como Estruturas de dados, Testes unitários, Complexidade de algoritmos, Desenvolvimento orientado a testes, 
+                            Orientação à objetos, Engenharia de Software e Metodologias ágeis como Scrum, Kanbam e XP programing.
                         </p>
-                        <br>
                         <a href="#" class="button">Saiba Mais</a>
                     </div>
                     <div class="section-about--right">
-                        <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="pt_BR" 
-                            data-type="vertical" data-theme="light" data-vanity="luis-capelletto">
-                            <a class="LI-simple-link" href='https://br.linkedin.com/in/luis-capelletto?trk=profile-badge'>
-                                Luís Vinicius Capelletto
-                            </a>
-                        </div><!--!Linkedin Badge!-->
+                        <img src="media/fb_profile.jpg" alt="perfil img">
                     </div>
                 </div><!--section-about-->
             </div><!--secction-body-->
@@ -757,6 +772,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/scroll_gif.js"></script>
     
     <script src="assets/js/slider.js"></script>
     <!--FontAwesome-->

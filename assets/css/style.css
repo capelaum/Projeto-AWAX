@@ -85,7 +85,7 @@ header{
 
 .button{
     display: inline-block;
-    width: 200px;
+    max-width: 200px;
 
     background-color: #000;
     color: white;
@@ -133,6 +133,8 @@ header{
     width: 100vw;
     height: 100%;
     display: inline-block;
+
+    top: 0;
 }
 
 .slide-area{
@@ -144,22 +146,23 @@ header{
     align-items: center;
     text-align: center;
 
-    background-size: cover;
-
     color: white;
-    
 }
 
 .slide1{
-    background-image: url('../../media/bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../media/bg.jpg') top 0px center / cover;
+    
 }
 
 .slide2{
-    background-image: url('../../media/foto4.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../media/foto4.jpg') top 0px center / cover;
 }
 
 .slide3{
-    background-image: url('../../media/foto6.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../media/foto6.jpg') center/cover;
 }
 
 .slide-area h1{
@@ -317,6 +320,7 @@ footer {
 .section-about--left{
     flex: 1;
     padding: 10px 30px;
+    text-align: justify;
 }
 
 .section-about--left p{
@@ -539,7 +543,7 @@ footer {
     height: 100%;
 }
 
-.section-team .slide{
+.section-team .slide-team{
     width: 280px;
     height: 100%;
 
@@ -555,7 +559,7 @@ footer {
     flex-direction: column;
     height: 100%;
 
-    padding: 30px;
+    padding: 28px;
 
     justify-content: center;
     align-items: center;
