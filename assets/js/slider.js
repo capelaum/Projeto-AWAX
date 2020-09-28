@@ -4,12 +4,6 @@ var slidersTeam = document.getElementsByClassName("sliders-team")
 var slidersTestimonial = document.getElementsByClassName("sliders-testimonials")
 var slidersPremium = document.getElementsByClassName("sliders-premium")
 
-// Pega os elementos slides
-var slides = document.getElementsByClassName("slide");
-var slidesTeam = document.getElementsByClassName("slide-team");
-var slidesTestimonial = document.getElementsByClassName("slide-testimonials");
-var slidesPremium = document.getElementsByClassName("slide-premium");
-
 // Pega os comprimentos de cada slide
 var slideWidth = document.querySelector(".slide").offsetWidth;
 var slideWidthTeam = document.querySelector(".slide-team").offsetWidth;
@@ -43,15 +37,12 @@ const updateSlide = (pos) => {
   
   numeroSlides = 3;
 
-  pointers[pos].classList.add("active");
-  pointers[pos + numeroSlides].classList.add("active");
-  pointers[pos + numeroSlides].classList.add("active");
-  pointers[pos + numeroSlides].classList.add("active");
+  for( i = 0; i <= 3; i++){
+    pointers[pos + numeroSlides * i].classList.add("active");
+  }
 }
 
-
 function passarSlide() {
-
   removeActive(pointers);
 
   if (pos >= 2) {
@@ -62,9 +53,7 @@ function passarSlide() {
     pos++;
     updateSlide(pos);
   }
-
   // console.log("posicao: ", pos);
-  
 }
 
 function mudarSlide(e) {
@@ -72,7 +61,6 @@ function mudarSlide(e) {
   autoSlide(true);
 
   if (!e.classList.contains("active")) {
-    
     removeActive(pointers); 
 
     if(e === pointers[0] || e === pointers[3] || e === pointers[6] || e === pointers[9]){
