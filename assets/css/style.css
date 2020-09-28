@@ -1,3 +1,23 @@
+:root{
+    --green: #46ceac;
+    --green_h: #35ba9b;
+    --green_l: #61ddbc;
+
+    --blue: #4fc0e8;
+    --blue_h: #3aadd9;
+    --blue_l: #66d4f1;
+
+    --yellow: #fdcd56;
+    --yellow_h: #f5b945;
+    --yellow_l: #fbd277;
+
+    --red: #eb5463;
+    --red_h: #d94452;
+    --red_l: #f76c82;
+
+    --primary: #4BCFFA;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -79,7 +99,7 @@ header{
 
 .menu li a:hover,
 .menu .active a{
-    border-bottom: 5px solid #9ce2ff;
+    border-bottom: 5px solid var(--primary);
     color: #ccc;
 }
 
@@ -106,7 +126,7 @@ header{
 
 .button:hover{
     cursor: pointer;
-    background-color: #9ce2ff;
+    background-color: var(--primary);
     color: black;
 }
 
@@ -115,9 +135,6 @@ header{
 .banner{
     height: calc(100vh - 100px);
     background-color: #333;
-    background-size: cover;
-    background-position: bottom;
-    overflow: hidden;
     
 }
 
@@ -125,8 +142,6 @@ header{
     width: 1000vw;
     height: 100%;
     transition: all ease 1.5s;
-
-    
 }
 
 .slide{
@@ -141,6 +156,7 @@ header{
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
 
     justify-content: center;
     align-items: center;
@@ -150,19 +166,23 @@ header{
 }
 
 .slide1{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../media/bg.jpg') top 0px center / cover;
-    
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url('../../media/bg.jpg') center /cover ;    
 }
 
 .slide2{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../media/foto4.jpg') top 0px center / cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url('../../media/code.jpg') top 0px left 0px / cover ;
+}
+.slide3{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url('../../media/teclado.jpg') center/cover;
 }
 
-.slide3{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../media/foto6.jpg') center/cover;
+.slide-text{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    padding: 30px;
+    border-radius: 12px;
 }
 
 .slide-area h1{
@@ -173,7 +193,7 @@ header{
 }
 
 .slide-area h1 span{
-    color: #9ce2ff;
+    color: var(--primary);
 }
 
 .slide-area h2{
@@ -197,7 +217,7 @@ header{
     width: 15px;
     height: 15px;
 
-    border: 2px solid #9ce2ff;
+    border: 2px solid var(--primary);
     border-radius: 8px;
 
     margin-left: 5px;
@@ -206,7 +226,7 @@ header{
 }
 
 .banner .pointer.active{
-    background-color: #9ce2ff;
+    background-color: var(--primary);
 }
 
 /*** SECTIONS ***/
@@ -283,7 +303,7 @@ footer {
     margin-right:10px;
 }
 .footer-social a:hover {
-    background-color:#9ce2ff;
+    background-color:var(--primary);
 }
 .footer-social img {
     height:10px;
@@ -451,7 +471,7 @@ footer {
 .section-projects--filters li:hover,
 .section-projects--filters li.active{
     cursor: pointer;
-    border-bottom: 3px solid #9ce2ff;
+    border-bottom: 3px solid var(--primary);
 }
 
 .section-projects--filters li:first-child{
@@ -581,7 +601,7 @@ footer {
     width: 15px;
     height: 15px;
 
-    border: 2px solid #9ce2ff;
+    border: 2px solid var(--primary);
     border-radius: 8px;
 
     margin-left: 5px;
@@ -590,7 +610,7 @@ footer {
 }
 
 .section-team--area .pointer.active{
-    background-color: #9ce2ff;
+    background-color: var(--primary);
 }
 
 .section-team--image{
@@ -632,7 +652,7 @@ footer {
 }
 
 .section-team--social a:hover{
-    background-color: #9ce2ff;
+    background-color: var(--primary);
 }
 
 /*** TESTIMONALS ***/
@@ -696,14 +716,14 @@ footer {
 .section-testimonials .pointer {
     width:15px;
     height:15px;
-    border:2px solid #9ce2ff;
+    border:2px solid var(--primary);
     border-radius:8px;
     margin-left:5px;
     margin-right:5px;
     cursor:pointer;
 }
 .section-testimonials .pointer.active {
-    background-color:#9ce2ff;
+    background-color:var(--primary);
 }
 
 /*** COMPANIES ***/
@@ -831,14 +851,14 @@ footer {
 .section-premium .pointer {
     width:15px;
     height:15px;
-    border:2px solid #9ce2ff;
+    border:2px solid var(--primary);
     border-radius:8px;
     margin-left:5px;
     margin-right:5px;
     cursor:pointer;
 }
 .section-premium .pointer.active {
-    background-color:#9ce2ff;
+    background-color:var(--primary);
 }
 
 /*** FACTS  ***/
@@ -852,12 +872,12 @@ footer {
     padding:15px;
 }
 .section-fact h3 {
-    color:#9ce2ff;
+    color:var(--primary);
     font-size:45px;
 }
 .section-fact-line {
     width:20px;
-    border-bottom:2px solid #9ce2ff;
+    border-bottom:2px solid var(--primary);
     margin:auto;
 }
 .section-fact h4 {
@@ -1036,7 +1056,7 @@ footer {
     }
     .menu li.active a {
         border:0;
-        color:#9ce2ff;
+        color:var(--primary);
     }
 
     /*** ABOUT ***/
@@ -1176,7 +1196,7 @@ footer {
     }
     .menu li.active a {
         border:0;
-        color:#9ce2ff;
+        color:var(--primary);
     }
 
     .banner h1 {

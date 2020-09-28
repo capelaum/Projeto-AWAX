@@ -1,7 +1,7 @@
 const pointers = document.querySelectorAll(".pointer");
 var pos = 0;
 
-window.onload = function () {
+window.onload = () => {
   var slidewidth = document.querySelector(".sliders-pointers").offsetWidth;
   var objs = document.getElementsByClassName("slide");
 
@@ -10,9 +10,10 @@ window.onload = function () {
   for (var i = 0; i < objs.length; i++) {
     objs[i].style.width = slidewidth + "px";
   }
-
+  
   // passa automaticamente a cada periodo
   setInterval(passarSlide, 5000);
+
 };
 
 function passarSlide() {
