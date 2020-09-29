@@ -1136,15 +1136,17 @@ footer {
         margin: 0 30px;
     }
 
-    .section-aboutus--right {
+    /* .section-aboutus--right {
         width:auto;
         margin-left:30px;
         margin-right:30px;
-    }
+    } */
+
     .section-aboutus--right img {
         width: 400px;
     }
 
+    .section-aboutus--right,
     .section-aboutus-right--playvideo{
         width: 400px;
         margin: auto;
