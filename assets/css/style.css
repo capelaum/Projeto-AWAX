@@ -333,30 +333,69 @@ footer {
 
 /*** ABOUT ***/
 
-.section-about{
+.section-about-linkedin{
     display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.section-about--left{
+.section-about--left-linkedin{
     flex: 1;
     padding: 10px 30px;
     text-align: justify;
 }
 
+.section-about--left-linkedin p{
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 30px;
+}
+
+.section-about--right-linkedin{
+    width: 50%;
+    padding-bottom: 30px;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ****** */
+
+.section-about{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-about--left{
+    flex: 1;
+    padding: 10px 30px;
+    text-align: center;
+}
+
 .section-about--left p{
     font-size: 14px;
     line-height: 20px;
+    padding-top: 30px;
 }
 
 .section-about--right{
-    width: 520px;
+    width: 100%;
+    padding-bottom: 30px;
+
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-about--right img{
     width: 250px;
+    height: 250px;
     box-shadow: 0px 0px 10px #333;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 
 /* Linkedin */
@@ -368,14 +407,17 @@ footer {
 /*** VIDEO ***/
 
 .section-aboutus--right{
-    width: 520px;
+    width: 100%;
+    height: 100%;
+
+    margin-top: 20px;
+
     position: relative;
     text-align: center;
 }
 
-.section-aboutus--right img{
-    width: 480px;
-    height: 100%;
+.section-aboutus--right video{
+    width: 100%;;
     box-shadow: 0px 0px 10px #333;
 }
 
@@ -388,8 +430,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 480px;
-    height: 101%;
+    width: 100%;;
+    height: 100%;;
 }
 
 .section-aboutus-right--playvideo i{
