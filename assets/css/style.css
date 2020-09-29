@@ -1114,6 +1114,11 @@ footer {
         color:var(--primary);
     }
 
+    .banner,
+    .sliders {
+        overflow: hidden;
+    }
+
     /*** ABOUT ***/
 
     .section-about {
@@ -1125,6 +1130,7 @@ footer {
         text-align: center;
         margin: auto;
         width: 80%;
+        padding-bottom: 50px;
     }
 
     .section-about--left iframe {
