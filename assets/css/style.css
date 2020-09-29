@@ -610,10 +610,13 @@ footer {
 }
 
 .section-team .slide-team{
-    width: calc(30vw - 48px);
-    height: 100%;
+    width: 200px;
+    height: 270px;
 
-    min-height: 270px;
+    max-height: 300px;
+    min-height: 250px;
+
+    
 
     display: inline-block;
     background-color: white;
@@ -674,13 +677,14 @@ footer {
     font-weight: 600;
     font-size: 17px;
 
-    margin-top: 30px;
+    margin-top: 20px;
+    max-height: 25px;
 }
 
 .section-team--role{
     font-size: 14px;
     color: #999;
-    margin-top: 5px;
+    padding-top: 10px;
 }
 
 .section-team--social{
@@ -1190,9 +1194,17 @@ footer {
     }
 
     .section-team .slide-area{
-        
         padding: 20px;
-        
+    }
+
+    .section-team--name{
+        font-size: 14px;
+        max-height: 25px;
+    }
+    
+    .section-team--role{
+        font-size: 12px;
+        padding-top: 10px;
     }
 
     /*** PRICE ***/
@@ -1357,6 +1369,15 @@ footer {
 
     .section-team {
         max-width:280px;
+    }
+
+    .section-team--name{
+        font-size: 12px;
+    }
+    
+    .section-team--role{
+        font-size: 10px;
+        padding-top: 5px;
     }
 
     .section-companies--area {
