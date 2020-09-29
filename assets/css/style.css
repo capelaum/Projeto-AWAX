@@ -133,13 +133,14 @@ header{
 /*** BANNER ***/
 
 .banner{
+    width: 1000%;
     height: calc(100vh - 100px);
     background-color: #333;
     overflow: hidden;
 }
 
 .sliders{
-    width: 1000vw;
+    width: 1000%;
     height: 100%;
     transition: all ease 1.5s;
     overflow: hidden;
