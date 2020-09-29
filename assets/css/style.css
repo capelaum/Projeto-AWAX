@@ -137,6 +137,7 @@ header{
 
     height: calc(100vh - 100px);
     background-color: #333;
+    overflow: hidden;
 }
 
 .sliders{
@@ -609,7 +610,7 @@ footer {
 }
 
 .section-team .slide-team{
-    width: 280px;
+    width: calc(30vw - 48px);
     height: 100%;
 
     min-height: 270px;
