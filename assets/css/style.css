@@ -136,7 +136,7 @@ header{
     width: 100vw;
     height: calc(100vh - 100px);
     background-color: #333;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .sliders{
